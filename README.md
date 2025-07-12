@@ -11,7 +11,7 @@
 - Run `./start-keycloak.sh`, then open http://localhost:8080 to login to Keycloak with `admin:admin`
 - Keycloak is started with debug mode at debug port 5005
 - You can then start remote JVM debug in the IDE
-- For using MyCustomAuthenticator, try add it into an authentication flow as a step
+- For using MyCustomAuthenticator, try add it into an authentication flow as a step before Identity Provider Redirector step
 
 ### More Info
 

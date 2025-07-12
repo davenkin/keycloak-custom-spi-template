@@ -13,7 +13,7 @@ public class MyCustomAuthenticator implements Authenticator {
     @Override
     public void authenticate(AuthenticationFlowContext authenticationFlowContext) {
         logger.info("MyCustomAuthenticator authenticate()");
-        authenticationFlowContext.success();
+        authenticationFlowContext.attempted();
     }
 
     @Override

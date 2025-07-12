@@ -62,6 +62,7 @@ public class MyCustomAuthenticatorFactory implements AuthenticatorFactory {
     @Override
     public Authenticator create(KeycloakSession keycloakSession) {
         logger.info("Creating My Custom Authenticator");
+        logger.info(keycloakSession.getContext().getHttpRequest().getUri().getAbsolutePath().toString());
         return new MyCustomAuthenticator();
     }
 
